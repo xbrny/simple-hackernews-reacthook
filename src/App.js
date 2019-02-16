@@ -16,7 +16,7 @@ const App = () => {
     setIsLoading(true);
     try {
       const result = await axios.get(
-        `http://hn.algolia.com/api/v1/search?query=${query}`
+        `https://hn.algolia.com/api/v1/search?query=${query}`
       );
       setNews(result.data.hits);
     } catch (err) {
